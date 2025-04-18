@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel ='shortcut icon' href ='imagens/favicon.ico' type ='ico' />
+        <title>Contato</title>
+    </head>
+
+    <body>
+
+        <div class = 'Menu' >
+            <table>
+                <tr>
+                    <td><a href ='./index.html'>HOME</a> | </td>
+                    <td><a href ='./Eventos.html'>EVENTOS</a> | </td>
+                    <td><strong>CONTATO</strong> | </td>
+                    <td><a href ='./Sobre.html'>SOBRE</a> | </td>
+                    <td><a href="./Entrar.html">ENTRAR</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <style>
+            .Menu{
+                float: right; 
+            }
+        </style>
+
+        <div class = 'Logo' >
+            <img src ='imagens/Logo.jpg' id = 'LogoID'/>
+        </div>
+
+        <div class = 'Infos' >
+           <h2>Mande uma mensagem</h2>
+
+           <ul>
+            <form> 
+                <li>
+                    <label for ='NomeID'>Nome </label>
+                    <input type ='text'
+                        required
+                        name = 'primeiroNome'
+                        id = 'NomeID'
+                    />
+                </li>
+
+                <li>
+                    <label for = 'emailID'>E-mail </label>
+                    <input type="email"
+                        required
+                        name = 'contactUser'
+                        id = 'emailID'
+                        placeholder="exemplo@email.com"
+                    />
+                </li>
+
+                <li>
+                    <label for ='telID'>Telefone </label>
+                    <input type ='tel'
+                        required
+                        name ='contactUser'
+                        id ='telID'
+                        placeholder="(11)40028922" 
+                        minlength="12"
+                        maxlength="12"
+                    />
+              </li>
+
+              <li>
+                    <label for ='aboutID'>Assunto: </label>
+                    <select id = 'aboutID' required>
+                        <option>-- Selecione --</option>
+                        <option>Reclamação</option>
+                        <option>Sugestão</option>
+                    </select>
+              </li>
+
+              <li>
+                    <label for ='mensageBox'>Mensagem: </label><br>
+                    <textarea id='mensageBox'
+                        name='mensagem'
+                        maxlength="250"
+                        placeholder="Digite aqui sua Sugestão/Reclamação"
+                        required
+                        spellcheck="on"
+                        rows="10" cols="35"
+                        wrap="soft"></textarea>
+              </li>
+
+              <li>
+                <fieldset id = 'emailContact'>
+                    <legend>Opções de Resposta</legend>
+                    <label for = 'emailContact'>Email </label>
+                    <input type ="checkbox"
+                        name = 'ResponseContact'
+                        value = 'Email'
+                        required
+                    /><br>
+
+                    <label for ='telContact'>Telefone </label>
+                    <input type = 'checkbox'
+                        name = 'ResponseContact'
+                        value = 'Telefone'
+                    />
+
+                </fieldset>
+             </li><br>
+
+             <li>
+                <input type ="submit"
+                    value = 'Enviar'
+
+                />
+             </li>
+
+            </form>
+
+           </ul>
+        </div><br><br>
+
+        <div class = 'links' >
+            <a href ='https://www.facebook.com/ifsppirituba' target="_blank" >
+                <img src="imagens/facebook.png" width = '55px' height="50px" title ='IFSP facebook'/> 
+                
+            </a>
+        </div>
+
+        <div class="Rodape">
+            <footer>
+                <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: +55 
+                    (011)2504-0100
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

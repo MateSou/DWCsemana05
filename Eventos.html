@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Eventos</title>
+        <link rel ='shortcut icon' href ='imagens/favicon.ico' type ='ico' />
+    </head>
+
+    <body>
+        <div class = 'Menu' >
+            <table>
+                <tr>
+                    <td><a href ='./index.html'>HOME</a> | </td>
+                    <td><strong>EVENTOS | </strong></td>
+                    <td><a href ='./Contato.html'>CONTATO | </a></td>
+                    <td><a href = './Sobre.html'>SOBRE</a> | </td>
+                    <td><a href = './Entrar.html'>ENTRAR</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <style>
+            .Menu{
+                float: right; 
+            }
+        </style>
+
+        <div class = 'Logo' >
+            <img src ='imagens/Logo.jpg' id = 'LogoID'/>
+        </div>
+
+        <h2>Inscreva-se</h2>
+
+        <div class = 'Forms' >
+            <form> 
+                <fieldset id = 'Eventos'>
+                 <label for ='eventoID' >Evento: </label>
+                    <select name ='evento' id ='eventoID'>
+                        <option>-- Selecione --</option>
+                        <option>Voe sem Asas</option>
+                        <option>Festa Junina</option>
+                        <option>Semana de Tecnologia</option>
+                    </select>
+                </fieldset>
+
+                <fieldset id = 'Acesso'>
+                    <legend>Informações de Acesso</legend>
+                
+                    <label for ='user'>Usuário </label>
+                    <input type ='text' 
+                        name = 'user' 
+                        id ='user' 
+                        required
+                    /> <br>
+                    <label for ='passwdID'>Senha </label>
+                    <input type='password' 
+                        name ='passwd' 
+                        id ='passwdID' 
+                        required
+                    /> <br>
+                    <label for ='confirmID'>Confirme a Senha </label>
+                    <input type='password' 
+                        name ='confirm' 
+                        id ='confirmID' 
+                        required
+                    />
+                </fieldset>
+
+                <fieldset id ='personalInfo'>
+                    <legend>Informações Pessoais</legend>
+                    <label for ='nomeID'>Nome Completo </label>
+                    <input type='text' 
+                        name ='nome' 
+                        id ='nomeID' 
+                        required 
+                        placeholder="Fulano de Tal" 
+                    /> <br>
+                    <label name = 'email'>E-mail </label>
+                    <input type='email' 
+                        requeried 
+                        Id = 'emailID'
+                         placeholder="meuemail@dominio.com"
+                     />
+                    <label for ='celID'>Celular </label>
+                    <input type ='tel' 
+                     name ='celular' id="celID" 
+                     required 
+                     placeholder="(11)40028922" minlength="12" maxlength="15" 
+                    />
+
+                    <fieldset id = 'fieldSexo'>
+                        <legend>Sexo</legend>
+                        <label for ='sexMascID'>Masculino</label>
+                        <input type="radio"
+                            name ='genero'
+                            value ='Masculino' 
+                            id = 'sexMascID'
+                            required
+                        /><br>
+
+                        <label for ='sexFemID'>Feminino</label>
+                        <input type ='radio'
+                            name = 'genero'
+                            value = 'Feminino'
+                            id = 'sexFemID'
+                            required
+                        /><br>
+
+                        <label for ='sexIndefID'>Prefiro Não Informar</label>
+                        <input type ='radio'
+                            name ='genero'
+                            value ='SexIndef'
+                            id ='sexFemID'
+                            required
+                        />
+
+                        
+                    </fieldset>
+
+                    <label for ='NascID'>Data de Nascimento</label>
+                    <input type="date"
+                        required
+                        name = 'date'
+                        id = 'NascID'
+                    /><br>
+
+                    <label for='ColourID'>Cor Favorita</label>
+                    <input type ='color'
+                        required
+                        name ='favcolour'
+                        id = 'ColourID'
+                    /><br>
+
+                    <label for="linkGitHub">Perfil no GitHub</label>
+                    <input type = 'url'
+                        required
+                        name="perfilGitHub"
+                        id="linkGitHub"
+                    />
+                </fieldset>
+
+                <br>
+
+                <input type="submit"
+                    name = 'Dados'
+                    id ='subID'
+                    value="Enviar"
+                />
+
+                <input type="reset"
+                    id = 'resID'
+                    value ='Limpar'
+                />
+            </form>
+            
+        </div>
+
+        <br><br>
+
+        <div class = 'links'>
+            <a href = '#LogoID'> 
+                <img src = 'imagens/MoveTop.png' width ='55px' height='50px' title = 'Mover para o topo'/>
+                |
+            </a>
+
+            <a href ='https://www.facebook.com/ifsppirituba' target="_blank" >
+                <img src="imagens/facebook.png" width = '55px' height="50px" title ='IFSP facebook'/> 
+                
+            </a>
+        </div> <br>
+
+        <div class="Rodape">
+            <footer>
+                <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: +55 
+                    (011)2504-0100
+                </p>
+            </footer>
+        </div>
+
+        
+
+    </body>
+</html>
